@@ -1,51 +1,64 @@
-#include <stdlib.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memalloc.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lmonsat <lmonsat@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/03/13 16:29:50 by lmonsat           #+#    #+#             */
+/*   Updated: 2025/03/13 16:29:50 by lmonsat          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void * ft_memset( void * s, int c, size_t n )
+#include "include/libft.h"
+
+
+void	*ft_memset(void *s, int c, size_t n)
 {
-    unsigned char *p;
+	unsigned char *p;
 
-    p = s;
-    while (n != 0)
-    {
-        *p++ = (unsigned char)c;
-        n--;
-    }
-    return (s);
+	p = s;
+	while (n != 0)
+	{
+		*p++ = (unsigned char)c;
+		n--;
+	}
+	return (s);
 }
 
-void * ft_memalloc(size_t size)
+void	*ft_memalloc(size_t size)
 {
-    if (size == 0)
-    {
-        return (NULL);
-    }
+	if (size == 0)
+	{
+		return (NULL);
+	}
 
-    void *memory = malloc(size);
+	void *memory = malloc(size);
 
-    if (memory == NULL)
-    {
-        return (NULL);
-    }
+	if (memory == NULL)
+	{
+		return (NULL);
+	}
 
-    ft_memset(memory, 0, size);
+	ft_memset(memory, 0, size);
 
-    return (memory);
+	return (memory);
 }
 
 /*int main()
 {
-    size_t size = 10;
-    int *intArray = (int *)ft_memalloc(size * sizeof(int));
+	size_t size = 10;
+	int *intArray = (int *)ft_memalloc(size * sizeof(int));
 
-    if (intArray != NULL)
-    {
-        for (size_t i = 0; i < size; ++i)
-        {
-            printf("%d ", intArray[i]);
-        }
+	if (intArray != NULL)
+	{
+		for (size_t i = 0; i < size; ++i)
+		{
+			printf("%d ", intArray[i]);
+		}
 
-        free(intArray);
-    }
+		free(intArray);
+	}
 
-    return 0;
+	return (0);
 }*/

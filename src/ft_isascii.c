@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lmonsat <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: lmonsat <lmonsat@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/02 02:58:38 by lmonsat           #+#    #+#             */
-/*   Updated: 2024/03/02 02:59:20 by lmonsat          ###   ########.fr       */
+/*   Created: 2025/03/13 16:29:11 by lmonsat           #+#    #+#             */
+/*   Updated: 2025/03/13 16:29:11 by lmonsat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "include/libft.h"
 
 int	ft_isascii(int c)
 {
@@ -20,15 +20,16 @@ int	ft_isascii(int c)
 }
 /*#include <ctype.h>
 #include <stdio.h>
+
 int main ()
 {
-    int test = 'A';
-    printf("case 1, is ascii :\n");
-    printf("value : %d\n", ft_isascii(test));
-    printf("value (isascii) : %d\n\n", isascii(test));
+	int test = 'A';
+	printf("case 1, is ascii :\n");
+	printf("value : %d\n", ft_isascii(test));
+	printf("value (isascii) : %d\n\n", isascii(test));
 
-    int test2 = 128;
-    printf("case 2, non ascii :\n");
-    printf("value : %d\n", ft_isascii(test2));
-    printf("value (isascii) : %d", isascii(test2));
+	int test2 = 128;
+	printf("case 2, non ascii :\n");
+	printf("value : %d\n", ft_isascii(test2));
+	printf("value (isascii) : %d", isascii(test2));
 }*/

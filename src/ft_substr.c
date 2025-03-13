@@ -3,20 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lmonsat <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: lmonsat <lmonsat@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/04 01:59:27 by lmonsat           #+#    #+#             */
-/*   Updated: 2024/03/04 02:09:26 by lmonsat          ###   ########.fr       */
+/*   Created: 2025/03/13 16:27:33 by lmonsat           #+#    #+#             */
+/*   Updated: 2025/03/13 16:27:33 by lmonsat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "include/libft.h"
+
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	unsigned int	i;
-	unsigned int	j;
-	char			*new_string;
+	unsigned int i;
+	unsigned int j;
+	char *new_string;
 
 	if (!s)
 		return (NULL);
@@ -40,23 +41,23 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 /*#include <stdio.h>
 int main ()
 {
-    char const *string = "Hello, World!";
+	char const *string = "Hello, World!";
 
-    char *result = ft_substr(string, 7, 6);
+	char *result = ft_substr(string, 7, 6);
 
-    printf("original string : %s\n", string);
-    printf("modified string : %s\n\n", result);
+	printf("original string : %s\n", string);
+	printf("modified string : %s\n\n", result);
 
-    free(result);
+	free(result);
 
-    char const *string2 = "Hello, World!";
+	char const *string2 = "Hello, World!";
 
-    char *result2 = ft_substr(string, 0, 5);
+	char *result2 = ft_substr(string, 0, 5);
 
-    printf("original string : %s\n", string2);
-    printf("modified string : %s\n", result2);
+	printf("original string : %s\n", string2);
+	printf("modified string : %s\n", result2);
 
-    free(result);
+	free(result);
 
-    return 0;
+	return (0);
 }*/

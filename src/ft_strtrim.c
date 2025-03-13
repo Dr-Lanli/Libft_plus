@@ -3,22 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lmonsat <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: lmonsat <lmonsat@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/04 01:57:03 by lmonsat           #+#    #+#             */
-/*   Updated: 2024/03/04 02:21:02 by lmonsat          ###   ########.fr       */
+/*   Created: 2025/03/13 16:27:15 by lmonsat           #+#    #+#             */
+/*   Updated: 2025/03/13 16:27:15 by lmonsat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "include/libft.h"
 
+
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	int		start;
-	int		end;
-	int		j;
-	int		i;
-	char	*trimmed_string;
+	int start;
+	int end;
+	int j;
+	int i;
+	char *trimmed_string;
 
 	if (s1 == NULL || set == NULL)
 		return (NULL);
@@ -41,25 +42,25 @@ char	*ft_strtrim(char const *s1, char const *set)
 /*#include <stdio.h>
 int main ()
 {
-    char const *string1 = "****Hello, World!****";
-    char const *set = "*";
+	char const *string1 = "****Hello, World!****";
+	char const *set = "*";
 
-    char *result = ft_strtrim(string1, set);
+	char *result = ft_strtrim(string1, set);
 
-    printf("original string %s\n", string1);
-    printf("modified string : %s\n\n", result);
+	printf("original string %s\n", string1);
+	printf("modified string : %s\n\n", result);
 
-    free(result);
+	free(result);
 
-    char const *string2 = "//Hello, World!//";
-    char const *set2 = "/";
+	char const *string2 = "//Hello, World!//";
+	char const *set2 = "/";
 
-    char *result2 = ft_strtrim(string2, set2);
+	char *result2 = ft_strtrim(string2, set2);
 
-    printf("original string2 %s\n", string2);
-    printf("modified string2 : %s\n", result2);
+	printf("original string2 %s\n", string2);
+	printf("modified string2 : %s\n", result2);
 
-    free(result2);
+	free(result2);
 
-    return 0;
+	return (0);
 }*/

@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: lmonsat <lmonsat@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/19 14:59:09 by lmonsat           #+#    #+#             */
-/*   Updated: 2025/03/10 18:37:05 by lmonsat          ###   ########.fr       */
+/*   Created: 2025/03/13 16:28:36 by lmonsat           #+#    #+#             */
+/*   Updated: 2025/03/13 16:28:37 by lmonsat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "include/libft.h"
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
@@ -25,33 +25,33 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	}
 	if (nmemb >= 65535 || size >= 65535)
 		return (NULL);
-	mem = (void *) malloc(nmemb * size);
+	mem = (void *)malloc(nmemb * size);
 	if (!mem)
 		return (NULL);
 	ft_bzero(mem, nmemb * size);
 	return (mem);
 }
 /*#include <stdio.h>
-int main()
+int	main(void)
 {
-    size_t nmemb = 5;
-    size_t size = sizeof(int);
-    
-    int *array = (int *)ft_calloc(nmemb, size);
-    if (array == NULL) {
-        printf("Allocation failed\n");
-        return 1;
-    }
-    
-    printf("Allocation succesful\n");
-    
-    printf("Array :\n");
-    for (size_t i = 0; i < nmemb; ++i) {
-        printf("%d ", array[i]);
-    }
-    printf("\n");
-    
-    free(array);
-    
-    return 0;
+	size_t nmemb = 5;
+	size_t size = sizeof(int);
+
+	int *array = (int *)ft_calloc(nmemb, size);
+	if (array == NULL) {
+		printf("Allocation failed\n");
+		return (1);
+	}
+
+	printf("Allocation succesful\n");
+
+	printf("Array :\n");
+	for (size_t i = 0; i < nmemb; ++i) {
+		printf("%d ", array[i]);
+	}
+	printf("\n");
+
+	free(array);
+
+	return (0);
 }*/

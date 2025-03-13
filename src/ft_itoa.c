@@ -3,18 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lmonsat <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: lmonsat <lmonsat@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/02 03:03:23 by lmonsat           #+#    #+#             */
-/*   Updated: 2024/03/05 17:54:55 by lmonsat          ###   ########.fr       */
+/*   Created: 2025/03/13 16:29:43 by lmonsat           #+#    #+#             */
+/*   Updated: 2025/03/13 16:29:43 by lmonsat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "include/libft.h"
+
 
 static int	nb_len(int n)
 {
-	int	total_len;
+	int total_len;
 
 	total_len = 1;
 	if (n < 0)
@@ -32,9 +33,9 @@ static int	nb_len(int n)
 
 char	*ft_itoa(int n)
 {
-	char	*str_nb;
-	int		len;
-	int		sign_nb;
+	char *str_nb;
+	int len;
+	int sign_nb;
 
 	len = nb_len(n);
 	sign_nb = 1;
@@ -56,9 +57,9 @@ char	*ft_itoa(int n)
 	return (str_nb);
 }
 /*#include <stdio.h>
-int main()
+int	main(void)
 {
-    int n = 5;
+	int n = 5;
 
-    printf("value : %s\n", ft_itoa(n));
+	printf("value : %s\n", ft_itoa(n));
 }*/
