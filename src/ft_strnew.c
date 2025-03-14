@@ -10,12 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/libft.h"
-
+#include "../include/libft.h"
 
 char	*ft_strnew(size_t size)
 {
-	char *memory;
+	char	*memory;
+
 	if (size == 0)
 	{
 		return (NULL);

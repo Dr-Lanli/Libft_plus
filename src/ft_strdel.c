@@ -10,15 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/libft.h"
-
+#include "../include/libft.h"
 
 void	ft_strdel(char **as)
 {
 	free(*as);
 	*as = NULL;
 }
-
 /*int main()
 {
 	char *str_test = (char *)malloc(5 * sizeof(char));

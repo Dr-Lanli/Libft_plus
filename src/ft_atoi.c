@@ -10,13 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/libft.h"
+#include "../include/libft.h"
 
 int	ft_atoi(char *str)
 {
-	int n;
-	int is_negative;
-	int i;
+	int	n;
+	int	is_negative;
+	int	i;
 
 	n = 0;
 	is_negative = 0;

@@ -10,13 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/libft.h"
-
+#include "../include/libft.h"
 
 static int	ft_words(char const *s, char c)
 {
-	int words;
-	int in_word;
+	int	words;
+	int	in_word;
 
 	words = 0;
 	in_word = 0;
@@ -39,10 +38,10 @@ static int	ft_words(char const *s, char c)
 
 static char	*ft_copy_word(char const *s, char c)
 {
-	const char *word_start;
-	char *word;
-	int len;
-	int i;
+	const char	*word_start;
+	char		*word;
+	int			len;
+	int			i;
 
 	word_start = s;
 	len = 0;
@@ -66,10 +65,10 @@ static char	*ft_copy_word(char const *s, char c)
 
 char	**ft_split(char const *s, char c)
 {
-	int len_words;
-	int i;
-	int in_word;
-	char **result;
+	int		len_words;
+	int		i;
+	int		in_word;
+	char	**result;
 
 	len_words = ft_words(s, c);
 	result = (char **)malloc((len_words + 1) * sizeof(char *));

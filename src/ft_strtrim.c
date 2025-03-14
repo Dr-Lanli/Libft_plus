@@ -10,16 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/libft.h"
-
+#include "../include/libft.h"
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	int start;
-	int end;
-	int j;
-	int i;
-	char *trimmed_string;
+	int		start;
+	int		end;
+	int		j;
+	int		i;
+	char	*trimmed_string;
 
 	if (s1 == NULL || set == NULL)
 		return (NULL);

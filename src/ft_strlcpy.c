@@ -6,11 +6,11 @@
 /*   By: lmonsat <lmonsat@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 14:27:04 by lmonsat           #+#    #+#             */
-/*   Updated: 2025/03/13 16:24:38 by lmonsat          ###   ########.fr       */
+/*   Updated: 2025/03/14 15:30:59 by lmonsat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/libft.h"
+#include "../include/libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {

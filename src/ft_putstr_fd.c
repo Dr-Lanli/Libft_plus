@@ -6,11 +6,11 @@
 /*   By: lmonsat <lmonsat@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 00:49:41 by lmonsat           #+#    #+#             */
-/*   Updated: 2025/03/13 16:31:53 by lmonsat          ###   ########.fr       */
+/*   Updated: 2025/03/14 15:35:35 by lmonsat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/libft.h"
+#include "../include/libft.h"
 
 void	ft_putstr_fd(char *s, int fd)
 {

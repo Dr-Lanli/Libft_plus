@@ -10,15 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/libft.h"
-
+#include "../include/libft.h"
 
 char	*ft_strstr(const char *haystack, const char *needle)
 {
-	int i;
-	int find;
-	const char *str;
-	const char *to_find;
+	int			i;
+	int			find;
+	const char	*str;
+	const char	*to_find;
 
 	if (*needle == '\0')
 		return ((char *)(haystack));
@@ -28,7 +27,6 @@ char	*ft_strstr(const char *haystack, const char *needle)
 		{
 			str = haystack;
 			to_find = needle;
-
 			while (*to_find != '\0' && *str == *to_find)
 			{
 				str++;

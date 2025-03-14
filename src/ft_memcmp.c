@@ -10,14 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/libft.h"
-
+#include "../include/libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	const unsigned char *string1;
-	const unsigned char *string2;
-	size_t i;
+	const unsigned char	*string1;
+	const unsigned char	*string2;
+	size_t				i;
 
 	string1 = s1;
 	string2 = s2;

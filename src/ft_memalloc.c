@@ -10,12 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/libft.h"
-
+#include "../include/libft.h"
 
 void	*ft_memset(void *s, int c, size_t n)
 {
-	unsigned char *p;
+	unsigned char	*p;
 
 	p = s;
 	while (n != 0)
@@ -28,20 +27,18 @@ void	*ft_memset(void *s, int c, size_t n)
 
 void	*ft_memalloc(size_t size)
 {
+	void	*memory;
+
 	if (size == 0)
 	{
 		return (NULL);
 	}
-
-	void *memory = malloc(size);
-
+	memory = malloc(size);
 	if (memory == NULL)
 	{
 		return (NULL);
 	}
-
 	ft_memset(memory, 0, size);
-
 	return (memory);
 }
 

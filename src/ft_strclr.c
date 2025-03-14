@@ -10,12 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/libft.h"
-
+#include "../include/libft.h"
 
 size_t	ft_strlen(const char *s)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	while (s[i] != '\0')
@@ -27,7 +26,7 @@ size_t	ft_strlen(const char *s)
 
 void	*ft_memset(void *s, int c, size_t n)
 {
-	unsigned char *p;
+	unsigned char	*p;
 
 	p = s;
 	while (n != 0)
@@ -40,7 +39,9 @@ void	*ft_memset(void *s, int c, size_t n)
 
 void	ft_strclr(char *s)
 {
-	size_t size = ft_strlen(s);
+	size_t	size;
+
+	size = ft_strlen(s);
 	ft_memset((void *)s, '\0', size + 1);
 }
 

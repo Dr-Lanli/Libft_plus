@@ -6,11 +6,11 @@
 /*   By: lmonsat <lmonsat@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 00:48:05 by lmonsat           #+#    #+#             */
-/*   Updated: 2025/03/13 16:31:50 by lmonsat          ###   ########.fr       */
+/*   Updated: 2025/03/13 17:49:39 by lmonsat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/libft.h"
+#include "../include/libft.h"
 
 void	ft_putnbr_fd(int nb, int fd)
 {

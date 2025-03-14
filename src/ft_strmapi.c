@@ -10,27 +10,23 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/libft.h"
-
+#include "../include/libft.h"
 
 char	ft_strupcase(char str)
 {
 	if (str >= 'a' && str <= 'z')
 		str -= 32;
-
 	return (str);
 }
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	char *new_string;
-	unsigned int i;
+	char			*new_string;
+	unsigned int	i;
 
 	i = 0;
 	new_string = (char *)malloc((ft_strlen(s) + 1) * sizeof(char));
-
 	ft_strcpy(new_string, s);
-
 	while (new_string[i])
 	{
 		new_string[i] = f(new_string[i], i);

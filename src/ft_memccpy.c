@@ -10,14 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/libft.h"
-
+#include "../include/libft.h"
 
 void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 {
-	unsigned char *destm;
-	const unsigned char *srcm;
-	size_t i;
+	unsigned char		*destm;
+	const unsigned char	*srcm;
+	size_t				i;
 
 	destm = dest;
 	srcm = src;
@@ -29,7 +28,6 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 			destm[i] = c;
 			return ((void *)(destm + i + 1));
 		}
-
 		destm[i] = srcm[i];
 		i++;
 	}

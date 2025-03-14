@@ -6,11 +6,11 @@
 /*   By: lmonsat <lmonsat@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 00:46:29 by lmonsat           #+#    #+#             */
-/*   Updated: 2025/03/13 16:31:46 by lmonsat          ###   ########.fr       */
+/*   Updated: 2025/03/13 17:49:32 by lmonsat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/libft.h"
+#include "../include/libft.h"
 
 void	ft_putendl_fd(char *s, int fd)
 {
