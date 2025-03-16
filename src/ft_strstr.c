@@ -14,8 +14,6 @@
 
 char	*ft_strstr(const char *haystack, const char *needle)
 {
-	int			i;
-	int			find;
 	const char	*str;
 	const char	*to_find;
 

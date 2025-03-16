@@ -15,7 +15,6 @@
  NAME  = libft.a
  SRC_DIR = src
  OBJ_DIR = obj
- INCLUDE = include
 
  CC  = cc
 
@@ -31,13 +30,13 @@
 all: $(NAME)
  
 $(NAME): $(OBJS)
-	$(AR) $(ARFLAGS) -I $(INCLUDE) $(NAME) $(OBJS)
+	$(AR) $(ARFLAGS) $(NAME) $(OBJS)
 
 $(OBJ_DIR):
 	mkdir -p $(OBJ_DIR)
 	
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c | $(OBJ_DIR)
-	$(CC) $(CFLAGS) -I $(INCLUDE) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	rm -rf $(OBJS)

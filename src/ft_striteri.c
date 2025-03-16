@@ -12,7 +12,7 @@
 
 #include "../include/libft.h"
 
-void	ft_strupcase(unsigned int i, char *str)
+/*void	ft_strupcase(unsigned int i, char *str)
 {
 	int	j;
 
@@ -23,7 +23,7 @@ void	ft_strupcase(unsigned int i, char *str)
 			str[j] -= 32;
 		j++;
 	}
-}
+}*/
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {

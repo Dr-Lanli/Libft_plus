@@ -12,12 +12,12 @@
 
 #include "../include/libft.h"
 
-char	ft_strupcase(char str)
+/*char	ft_strupcase(char str)
 {
 	if (str >= 'a' && str <= 'z')
 		str -= 32;
 	return (str);
-}
+}*/
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
